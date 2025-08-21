@@ -1,9 +1,9 @@
 import { Router } from "express";
 
-import { BookController } from "../modules/books/book.controller.ts";
-import { validateDto } from "../middleware/dto.validation.ts";
-import { CreateBookDto, UpdateBookDto } from "../modules/books/book.dto.ts";
-import HistoryController from "../modules/history/history.controller.ts";
+import { BookController } from "../modules/books/book.controller";
+import { validateDto } from "../middleware/dto.validation";
+import { CreateBookDto, UpdateBookDto } from "../modules/books/book.dto";
+import HistoryController from "../modules/history/history.controller";
 const router = Router();
 router.get("/", (req, res) => {
   res.json({ message: "OK" });
