@@ -1,8 +1,8 @@
 import mongoose, { Connection } from "mongoose";
 
-import { DB_CONFIG } from "../config/mongodb/db.config.ts";
+import { DB_CONFIG } from "../config/mongodb/db.config";
 
-import Logger from "./logger.ts";
+import Logger from "./logger";
 
 export default class Database {
   static context: string = Database.name;

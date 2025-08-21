@@ -1,15 +1,15 @@
 import axios from "axios";
 import mongoose from "mongoose";
 
-import { APP_CONFIG } from "../../config/app/app.config.ts";
-import Logger from "../../provider/logger.ts";
-import { NotFoundException } from "../../exceptions/not-found.exception.ts";
-import { BadRequestException } from "../../exceptions/bad-request.exception.ts";
+import { APP_CONFIG } from "../../config/app/app.config";
+import Logger from "../../provider/logger";
+import { NotFoundException } from "../../exceptions/not-found.exception";
+import { BadRequestException } from "../../exceptions/bad-request.exception";
 
-import { Book, IBook } from "./book.model.ts";
-import { CreateBookDto, UpdateBookDto } from "./book.dto.ts";
-import { IBookFilter, IBookObject, IBookQuery } from "./interface/book.interface.ts";
-import { parseBoolean } from "./utils/parseBoolean.ts";
+import { Book, IBook } from "./book.model";
+import { CreateBookDto, UpdateBookDto } from "./book.dto";
+import { IBookFilter, IBookObject, IBookQuery } from "./interface/book.interface";
+import { parseBoolean } from "./utils/parseBoolean";
 
 export class BookService {
   static context: string = BookService.name;

@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from "express";
 
-import Logger from "../../provider/logger.ts";
-import { SearchHistoryService } from "../history/history.service.ts";
+import Logger from "../../provider/logger";
+import { SearchHistoryService } from "../history/history.service";
 
-import { BookService } from "./book.service.ts";
-import { IBookObject } from "./interface/book.interface.ts";
+import { BookService } from "./book.service";
+import { IBookObject } from "./interface/book.interface";
 
 export class BookController {
   static context: string = BookController.name;

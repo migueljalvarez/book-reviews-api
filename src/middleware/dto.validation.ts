@@ -2,7 +2,7 @@ import { ClassConstructor, plainToInstance } from "class-transformer";
 import { validate } from "class-validator";
 import { Request, Response, NextFunction } from "express";
 
-import Logger from "../provider/logger.ts";
+import Logger from "../provider/logger";
 
 export function validateDto<T extends object>(dtoClass: ClassConstructor<T>) {
   return async (req: Request, res: Response, next: NextFunction) => {

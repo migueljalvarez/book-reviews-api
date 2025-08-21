@@ -1,7 +1,7 @@
-import app from "./app.ts";
-import config from "./config/index.ts";
-import Logger from "./provider/logger.ts";
-import Database from "./provider/mongodb.ts";
+import app from "./app";
+import config from "./config/index";
+import Logger from "./provider/logger";
+import Database from "./provider/mongodb";
 import "reflect-metadata";
 
 const { APP_CONFIG } = config;

@@ -1,6 +1,6 @@
-import Logger from "../../provider/logger.ts";
+import Logger from "../../provider/logger";
 
-import { SearchHistory, ISearchHistory } from "./history.model.ts";
+import { SearchHistory, ISearchHistory } from "./history.model";
 
 export class SearchHistoryService {
   static context = SearchHistoryService.name;

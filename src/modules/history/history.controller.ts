@@ -1,8 +1,8 @@
 import { NextFunction, Request, Response } from "express";
 
-import Logger from "../../provider/logger.ts";
+import Logger from "../../provider/logger";
 
-import { SearchHistoryService } from "./history.service.ts";
+import { SearchHistoryService } from "./history.service";
 
 export default class HistoryController {
   static context = HistoryController.name;
