@@ -9,7 +9,6 @@
     "skipLibCheck": true,
     "outDir": "./dist",
     "declaration": true,
-    "emitDeclarationOnly": true,
     "allowImportingTsExtensions": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
