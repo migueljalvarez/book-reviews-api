@@ -23,11 +23,6 @@ export class CreateBookDto {
   @Max(new Date().getFullYear())
   year!: number;
 
-  @IsString()
-  @IsNotEmpty()
-  @Length(10, 13)
-  isbn!: string;
-
   @IsBase64()
   @IsNotEmpty()
   coverBase64!: string;
@@ -46,15 +41,32 @@ export class CreateBookDto {
 
 export class UpdateBookDto {
   @IsString()
-  @IsOptional()
   @MaxLength(500)
-  review?: string;
+  review!: string;
+
   @IsInt()
   @Min(1)
   @Max(5)
-  rating?: number;
+  rating!: number;
+
   @IsString()
+  @IsNotEmpty()
   @IsOptional()
-  @Length(10, 13)
-  isbn?: string;
+  title?: string;
+
+  @IsString()
+  @IsNotEmpty()
+  @IsOptional()
+  author?: string;
+
+  @IsInt()
+  @Min(0)
+  @Max(new Date().getFullYear())
+  @IsOptional()
+  year?: number;
+
+  @IsBase64()
+  @IsNotEmpty()
+  @IsOptional()
+  coverBase64?: string;
 }

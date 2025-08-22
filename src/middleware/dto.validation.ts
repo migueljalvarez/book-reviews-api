@@ -16,7 +16,7 @@ export function validateDto<T extends object>(dtoClass: ClassConstructor<T>) {
       const messages = errors
         .map((err) => Object.assign({ field: err.property, constraints: err.constraints }))
         .flat();
-
+      
       res.status(400).json({
         status: 400,
         message: "Validation failed",

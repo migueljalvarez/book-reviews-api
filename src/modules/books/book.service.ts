@@ -66,7 +66,7 @@ export class BookService {
 
   static async search(query: IBookQuery): Promise<IBook[]> {
     Logger.info(this.context, `Searching books in DB with query: ${JSON.stringify(query)}`);
-
+   
     const filter: IBookFilter = {};
 
     if (query.title) {
